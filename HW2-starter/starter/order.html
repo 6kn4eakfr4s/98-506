@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Place an Order</title>
+  </head>
+  <body>
+    <main>
+      <h1>Place an Order</h1>
+      <!-- The action attribute tells the form where to submit information to on the server -->
+      <!-- Since we don't have a proper server set up, this doesn't do anything -->
+      <form action="/place-order">
+        <!-- Create your form inputs BELOW this line -->
+        Address
+        <br />
+        <input type="text" id="address" name="address" />
+        <br />
+        Name 
+        <br />
+        <input type="text" id="name" name="name" />
+        <br />
+        Delivery date
+        <br />
+        <input type="date" id="date" name="date" />
+        <br />
+        Whether to gift wrap
+        <br />
+        <input type="checkbox" id="gift" name="gift" />
+        <br />
+        Shipping type
+        <br />
+        <select name="shipping-type" id="shipping-type">
+          <option value="First Class">First Class</option>
+          <option value="Priority">Priority</option>
+          <option value="Express">Express</option>
+        </select>
+        <br />
+        Special instructions
+        <br />
+        <textarea id="instructions", name="instructions" rows="5" cols="33"></textarea>
+        <br />
+        <!-- Crete your form inputs ABOVE this line -->
+
+        
+        <!-- This button will submit the form when clicked -->
+        <button type="submit">Place Order</button>
+      </form>
+    </main>
+  </body>
+</html>
